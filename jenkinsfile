@@ -26,7 +26,7 @@ stage("Docker build") {
 }
 stage("Docker push") {
      steps {
-   sh "docker login -u aknamdeo786 -p @Akki786"
+   sh "docker login -u aknamdeo786 -p @Akshay786"
 sh "docker push aknamdeo786/calculator_1"
      }
 }
