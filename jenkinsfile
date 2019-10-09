@@ -27,7 +27,7 @@ stage("Docker build") {
 stage("Docker push") {
      steps {
    sh "docker login docker.io"
-sh "docker push aknamdeo786/calculator_1"
+sh "docker push docker.io/aknamdeo786/calculator_1"
      }
 }
 stage("Deploy to staging") {
