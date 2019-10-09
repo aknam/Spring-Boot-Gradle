@@ -26,7 +26,7 @@ stage("Docker build") {
 }
 stage("Docker push") {
      steps {
-   sh "docker login -u username -p password -f Dockerfile"
+   sh "docker login -u username -p password"
 sh "docker push nikhilnidhi/calculator_1"
      }
 }
