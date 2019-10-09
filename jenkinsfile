@@ -21,19 +21,19 @@ stage("Package") {
 stage("Docker build") {
      steps {
       
-          sh "docker build -t aknamdeo786/calculator_1 ."
+          sh "docker build -t aknamdeo786/hello ."
      }
 }
 stage("Docker push") {
      steps {
    sh "docker login -u aknamdeo786 -p @Akshay786"
-sh "docker push aknamdeo786/calculator_1"
+sh "docker push aknamdeo786/hello"
      }
 }
 stage("Deploy to staging") {
      steps {
  
-          sh "docker run -d --rm -p 8765:8080 --name calculator_1 aknamdeo786/calculator_1"
+          sh "docker run -d --rm -p 8765:8080 --name hello1 aknamdeo786/hello"
      }
 }
 stage("Acceptance test") {
