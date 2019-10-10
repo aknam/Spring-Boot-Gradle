@@ -33,7 +33,7 @@ sh "docker push aknamdeo786/hello"
 stage("Deploy to staging") {
      steps {
  
-          sh "docker run -d --rm -p 8765:8080 --name test hello:latest"
+          sh "docker run -d --rm -p 8765:8080 --name test aknamdeo786/hello:latest"
      }
 }
 stage("Acceptance test") {
