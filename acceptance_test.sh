@@ -1,2 +1,2 @@
 #!/bin/bash
-test "$(curl localhost:8765/sum?a=1\&b=2)" == "3"
+test "$(curl 18.188.85.130:8765/sum?a=1\&b=2)" == "3"
