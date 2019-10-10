@@ -1,0 +1,6 @@
+M python:3.5.2-alpine
+
+ENV BIND_PORT 5000
+ENV REDIS_HOST localhost
+ENV REDIS_PORT 6379
+
