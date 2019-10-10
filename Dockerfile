@@ -1,4 +1,4 @@
-M python:3.5.2-alpine
+FROM python:3.5.2-alpine
 
 ENV BIND_PORT 5000
 ENV REDIS_HOST localhost
