@@ -45,7 +45,7 @@ stage("Acceptance test") {
      }
   post {
      always {
-          sh "docker container stop test"
+          sh "docker rm -f test"
      }
 }
 }
