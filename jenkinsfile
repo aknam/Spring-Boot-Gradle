@@ -43,9 +43,5 @@ stage("Acceptance test") {
      }
 }
      }
-  post {
-     always {
-          sh "docker stop $(docker ps -aq)"
-     }
-}
+  
 }
