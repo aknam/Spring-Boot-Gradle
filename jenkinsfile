@@ -33,7 +33,7 @@ sh "docker push aknamdeo786/hello"
 stage("Deploy to staging") {
      steps {
  
-          sh "docker run -d -p 8765:8080 --name hello_2 aknamdeo786/hello"
+          sh "docker run -d -p 8765:8080 --name hello_3 aknamdeo786/hello"
      }
 }
 stage("Acceptance test") {
@@ -45,7 +45,7 @@ stage("Acceptance test") {
 }
 post {
      always {
-          sh "docker stop hello_2"
+          sh "docker stop hello_3"
      }
 }
 
