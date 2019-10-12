@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -I http://localhost:8765/
+curl -I http://localhost:8080/
